@@ -3,22 +3,34 @@
 
 using namespace std;
 
+
+
 int main()
 {
+char character;
+char charactercapital;
+char characterlowercase;
+
 
   cout<<"What character do you want to know about?\n";
+  cin>> character;
+   if(character>='A'&&character<='Z') 
+   {
 
-  //when user's entry is between A-Z...
-  cout<<" is an upper case letter!\n";
+    charactercapital = character;
+    cout<< charactercapital<< " is an upper case letter." <<endl;
+    }
+    else if(character>='a'&&character<='z')
+    {
+    characterlowercase = character;
+    cout<< characterlowercase<< " is a lower case letter." <<endl;
+    }
+    else
+    {
+    cout<<character<< "Please start over with a letter." <<endl;
+    }
+    cout<< "The ASCII value is : " <<(int)character<<endl;
 
-  //when user's entry is between a-z...
-  cout<<" is a lower case letter!\n";
-
-  //in all other cases...
-  cout<<"?! Pssh. What are you talking about?\n";
-  
-  //no matter what they enter...
-  cout<<"The ASCII value is: ";
 
   return 0;
 }
