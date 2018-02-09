@@ -18,18 +18,18 @@ char characterlowercase;
    {
 
     charactercapital = character;
-    cout<< charactercapital<< " is an upper case letter." <<endl;
+    cout<< charactercapital<< " is an upper case letter!" <<endl;
     }
     else if(character>='a'&&character<='z')
     {
     characterlowercase = character;
-    cout<< characterlowercase<< " is a lower case letter." <<endl;
+    cout<< characterlowercase<< " is a lower case letter!" <<endl;
     }
     else
     {
-    cout<<character<< "Please start over with a letter." <<endl;
+    cout<<character<< "?! Pssh. What are you talking about?" <<endl;
     }
-    cout<< "The ASCII value is : " <<(int)character<<endl;
+    cout<< "The ASCII value is: " <<(int)character<<endl;
 
 
   return 0;
